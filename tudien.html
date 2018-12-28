@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type = "text" id = "keyword">
+    <button type = "text" onclick = "dich();">Dịch</button>
+    <script>
+        // var keyword = prompt("Nhập vào từ cần tìm");
+        var eng = ["blue", "red", "black", "pink"];
+        var viet = ["xanh", "đỏ", "đen", "hồng"];
+        function dich(){
+            var keyword = document.getElementById('keyword').value;
+            var check = false;
+            for (var i = 0; i < eng.length; i ++){
+                if (eng[i] === keyword){
+                    document.write ("Nghĩa là: " + viet[i]);
+                    check = true;
+                }
+            } if (check == false){document.write ("Không tìm thấy từ vừa nhập.")}
+        }
+
+    </script>
+
+</body>
+</html>
